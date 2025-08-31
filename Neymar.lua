@@ -311,6 +311,18 @@ game:GetService("UserInputService").JumpRequest:Connect(function()
     end
 end)
 
+-- 🟦 محتوى صفحة 3 (سكربتات عامه )
+local vr7Button = Instance.new("TextButton")
+vr7Button.Size = UDim2.new(1, -10, 0, 40)
+vr7Button.Position = UDim2.new(0, 5, 0, 95)
+vr7Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+vr7Button.Text = "طيران نيمار"
+vr7Button.TextColor3 = Color3.fromRGB(255,255,255)
+vr7Button.Parent = Pages[3]
+vr7Button.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-VR7-45290"))()
+end)	
+
 -- الأزرار (10 أقسام)
 for i = 1, 10 do
     local Button = Instance.new("TextButton")
